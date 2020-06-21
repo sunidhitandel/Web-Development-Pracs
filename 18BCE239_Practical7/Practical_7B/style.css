@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}form
+{
+    max-width : 800px;
+    margin: 10px auto;
+    padding : 10px 20px;
+    background : #f4f7f8;
+    border-radius: 8px;
+}
+h1{
+    margin: 0 0 30px 0 ;
+    text-align: center;
+}
+h3{
+    margin: 0 0 30px 0 ;
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],textarea,select{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height:10px;
+    margin : 0;
+    outline : 0;
+    padding: 15px;
+    width : 100%;
+    background-color: #a5b5c159;
+    color : #8a97a0;
+    box-shadow : 0 1px 0 rgb(0,0,0,0.3) inset;
+    margin-bottom : 30px;
+    border-radius: 5px;
+}
+input:focus, textarea:focus{
+    box-shadow: 0 0 5px rgba(81,203,238,1);
+    border : 1px solid rgba(81,203,238,1);
+}
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin : 0 4px 8px 0;
+    margin-bottom : 30px;
+}
+button{
+    padding : 19px 39px 18px 39px;
+    color : #FFF;
+    background-color :#6c31a7;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border : 1px solid #8950c2;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+body{
+    background: url(bg12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.black
+{
+    background: black;
+    color : #cda9d8d4;
+}
+table{
+    text-align: center;
+    border-spacing: 10px;
+    padding: 50px;
+}

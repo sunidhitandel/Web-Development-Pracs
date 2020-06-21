@@ -1,0 +1,50 @@
+body
+{
+	margin: auto;
+	background: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.block
+{
+	
+	margin: auto;
+	width: 50%;
+	height: 90vh;
+	background-color: aliceblue;
+	border-radius: 10px;
+	margin-top: 50px;
+	text-align: center;
+	
+}
+
+.heading
+{
+	font-family: 'Lato';
+	text-align: center;
+	background-color: black;
+	font-size: 40px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: aliceblue;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.sub
+{
+	font-family: 'Ubuntu';
+	text-align: center;
+	color: black;
+	margin-top: 70px;
+	font-size: 30px;
+	
+}
+
+img
+{
+	height: 300px;
+	margin-top: 70px;
+}

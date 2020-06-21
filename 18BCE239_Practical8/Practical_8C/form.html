@@ -1,0 +1,104 @@
+
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>JavaScript for Form Validation</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="http://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+        <script src="form_validation.js"></script>
+    </head>
+    <body> 
+        <div class="form_div">
+            
+        
+        <form name='registration' onSubmit="return formValidation();">
+            <div class="black">
+                <h1> Sign Up Form for Placement</h1>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="userid">User id:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="userid" size="12" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passid">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="passid" size="12" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="username" size="50" />
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>   
+                    </td>
+                    <td>
+                        <input type="text" name="address" size="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country">First Priority</label>
+                    </td>
+                    <td>
+                        <select name="country">
+                            <option selected="" value="Default">(Please select a company)</option>
+                            <option value="AF">Nvidia</option>
+                            <option value="AL">Amazone</option>
+                            <option value="DZ">Doish bank</option>
+                            <option value="AS">Other MnC's</option>
+                            <option value="AD">Local Startups</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zip">CGPA</label>
+                    </td>
+                    <td><input type="text" name="zip" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="gender">Sex:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="msex" value="Male" /><span>Male</span>
+                        <input type="radio" name="fsex" value="Female" /><span>Female</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td><input type="text" name="email" size="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Interest Area</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="en" value="en" checked /><span>Web Devlopment</span>
+                        <input type="checkbox" name="nonen" value="noen" /><span>Software Devloper</span><br>
+                        <input type="checkbox" name="nonen" value="noen" /><span>Research Dept.</span>
+                        <input type="checkbox" name="nonen" value="noen" /><span>Full stack devloper</span>
+                    </td>
+                </tr>
+            </table>
+            <button type="Submit">Sign Up for your bright future!</button>
+            </form>
+        </div>
+    </body>
+</html>

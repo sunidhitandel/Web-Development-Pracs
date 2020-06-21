@@ -1,0 +1,129 @@
+body
+{
+	margin: auto;
+	background: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.block
+{
+	
+	margin: auto;
+	width: 50%;
+	height: 90vh;
+	background-color: aliceblue;
+	border-radius: 10px;
+	margin-top: 50px;
+	
+}
+
+.heading
+{
+	font-family: 'Lato';
+	text-align: center;
+	background-color: black;
+	font-size: 40px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: aliceblue;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.div
+{
+	margin: auto;
+	margin-top: 25px;
+	text-align: center;
+}
+h3
+{
+	display: inline;
+	font-family: 'Ubuntu';
+}
+.input
+{
+	border-radius: 5px;
+	border-width: 0px;
+	background-color:#e0e0e0;
+	height: 30px;
+	width: 200px;
+	margin-left: 60px;
+}
+
+.left
+{
+	margin-left: 75px;
+	margin-top: 20px;	
+}
+
+#mail
+{
+	width: 460px;
+}
+
+#address .input
+{
+	width: 460px;
+	height: 200px
+}
+
+h4
+{
+	display: inline;
+	font-family: 'Ubuntu';
+}
+
+.g
+{
+	margin-left: 50px;
+	background-color:#e0e0e0;
+	
+}
+
+#set
+{
+	margin-left: 20px;
+}
+
+#set_date
+{
+	margin-left: 10px;
+}
+
+.c
+{
+	margin-left: 55px;
+	background-color:#e0e0e0;
+	border-radius: 5px;
+	font-family: 'Ubuntu';
+}
+
+#sp
+{
+	margin-left: 45px;
+}
+
+.submit
+{
+	color: aliceblue;
+	background-color: deeppink;
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	font-family: 'Ubuntu';
+	border-width: 1px;
+}
+
+#date
+{
+	margin: 0;
+}
+
+::placeholder
+{
+	padding-left: 10px;
+}

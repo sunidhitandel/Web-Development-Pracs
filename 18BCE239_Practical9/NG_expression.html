@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>My first Angular App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+      
+	
+		#box{
+			border: 1px solid black;
+            width: 30%;
+            height: 30px;
+            display: block;
+            text-align:center;
+            background-color:cadetblue;
+		}
+		
+		h2
+		{
+			font-family: 'Montserrat';
+		}
+	
+	</style>
+</head>
+<body ng-app="MyApp">
+    <h2>Use of Expression!</h2>
+	<hr>
+	
+    <div ng-app ng-init=" DOB='13/06/2000'; Age= 20; semester = 4; gender='male';  person = { firstName:'Tirth', lastName :'Patel'}">
+		
+         {{"Name :" + person.firstName + " " + person.lastName}}<br>
+		{{"Age :" + age}}<br>
+		{{"Date Of Birth :" + DOB}}<br>
+		{{"Gender :" + gender}}<br>
+		{{"Semester :" + semester}}
+		
+    </div>
+	
+	
+
+	
+	<script>
+			 var ngApp = angular.module('myNgApp', []);
+
+			ngApp.controller('myController', function ($scope) {
+				$scope.student = { firstName: 'Sunidhi', lastName: 'Tandel' };
+				$scope.age=19;
+				$scope.gender="Female";
+				$scope.semester=4;
+			});
+	</script>
+</body>
+</html>

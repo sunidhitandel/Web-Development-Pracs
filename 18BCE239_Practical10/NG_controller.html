@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>My first Angular App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+	<style>
+		
+		body
+		{
+			background: url(86373.jpg);
+			background-position: center;
+			background-size: cover;
+			font-family: 'Ubuntu';
+		
+		}
+	
+		#box{
+			border: 1px solid black;
+            width: 30%;
+            height: 30px;
+            display: block;
+            text-align:center;
+            background-color:cadetblue;
+		}
+		
+		h2
+		{
+			font-family: 'Lato';
+		}
+	
+	</style>
+</head>
+<script>
+    
+    var app = angular.module('myApp', []);
+    app.controller('myController', function($scope) {
+        $scope.fullname = "Sunidhi Tandel";
+        $scope.age = "18";  
+        $scope.mail="sunidh192001@gmail.com"
+        $scope.gender="female"; 
+        $scope.semester="4"
+    });
+
+</script>
+<body ng-app="MyApp">
+	
+	<h1><b>Use of Controllers</b></h1>
+	<hr>
+	<br>
+	<h2>Student Information:</h2>
+	<div ng-controller="myController">
+		First Name: {{student.fullname}} <br />
+		Age : {{age}}<br />
+        Gender : {{gender}}<br />
+        Email : {{mail}} <br/>
+		Semester : {{semester}}<br />
+    </div>
+    </body>
+    </html>

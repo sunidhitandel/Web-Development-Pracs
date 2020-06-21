@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Slider Form</title>
+        <script src="https://use.fontawesome.com/7b9ce1fbe4.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+        </head>
+    <body>
+        <script src="myapp.js"></script>
+        <script src="myapp2.js"></script>
+        <div class="container" id="container">
+                
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Student Registration </h1>
+                        <h2>Personal Info</h2>
+                        <span>This is example of angular binding , directives and controllers!</span><p></p>
+                        <div ng-app="myApp" ng-controller="Mycontrol">
+                        {{mail}}<input ng-model="mail" type="email" placeholder="Email">
+                        <p>uppercase name</p>{{fullname | uppercase }}<input ng-model="fullname" type="text" placeholder="Full-name">
+                        <p>lowercase username</p>{{username | lowercase}}<input ng-model="username" type="text" placeholder="username">
+                        <input ng-model="password" type="password" placeholder="password">
+                        
+                        <button>click on more!</button>
+                    </div>
+                </form> 
+                </div>
+                <div class="form-container sign-up-container">
+                    <form action="index.htm">
+                        <h1>Educational Information </h1>
+                        <div ng-app="myApp2" ng-controller="Mycontrol2">
+                        <span>This is example of angular binding , directives and controllers!</span><p></p>
+                        <input ng-model="contact" type="number" placeholder="Contact number"/>
+                       <input ng-model="dob" type="date" placeholder="DOB"/>
+                        <input ng-model="branch" type="text" placeholder="Branch"/>
+                        <input type="textarea" placeholder="Your small discription!">
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Hello, Friend!</h1>
+                            <h2>Welcome to Innovate Startup!</h2>
+                            <button class="ghost" id="signIn">Student Registration</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            
+                            <h1>Welcome to Innovate Startup!</h1>
+                            <p> We are happy to serve you ;)</p>
+                            <p>To keep connected with us please register with your personal info</p>
+                            <h2>This amazing form is made by 18BCE239</h2>
+                            <button class="ghost" id="signUp">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+</html>

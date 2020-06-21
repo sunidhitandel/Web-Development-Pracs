@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"> prac 8b</p>
+<button type="button" onclick='submit()'>Submit</button>
+<script>
+    var arr = [];
+    var ar=[];
+    var size = 5; 
+
+    for(var i=0; i<size; i++) {
+	
+	    arr[i] = prompt('Enter Element ' + (i+1));
+    }
+    for(var i=0; i<2; i++) {
+	
+    ar[i] = prompt('Enter Element ' + (i+1));
+    }
+    function submit() {
+    
+    var final = [...new Set(arr.concat(ar))] ;
+  document.getElementById("demo").innerHTML = final;
+}
+</script>
+
+</body>
+</html>

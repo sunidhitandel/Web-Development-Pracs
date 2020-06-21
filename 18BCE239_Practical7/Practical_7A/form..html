@@ -1,0 +1,82 @@
+<!DOCTYPTE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="form_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+	
+	<body>
+		
+		<div class = "block" >
+			
+			<h1 class="heading">REGISTRATION FORM</h1>
+			
+			<form action="after.html" >
+				
+			<div class="div">
+				<h3>Name</h3>
+				<input type="text" placeholder="First" class="input" required="required">
+				<input type="text" placeholder="Last" class="input">
+			</div>
+			
+			<div class="div" >
+				<h3>E-mail</h3>
+				<input type="email" placeholder="Mail" class="input" id="mail">
+			</div>
+			
+			<div class="left" >
+				<h3 id="set">Gender</h3>
+				<input type="radio" placeholder="First" class="g" name="gender" id="radio">
+				<h4 name="gender">Male</h4>
+				<input type="radio" placeholder="First" class="g" name="gender" id="radio" selected="selected">
+				<h4 name="gender">Female</h4>
+			</div>
+				
+			<div class="left">
+				<h3 id="set">Contact</h3>
+				<input type="text" placeholder="Mobile Number" class="input" id="sp" pattern="[0-9]{10}" required="required">
+				<h3 id="set_date">DOB</h3>
+				<input type="date" placeholder="First" class="input" id="date" required="required">
+				
+			</div>
+			
+			<div class="div" id="address">
+				<h3>Addrs</h3>
+				<input type="text" placeholder="Address" class="input" id="mail" required="required">
+			</div>
+				
+			<div class="left" >
+				<h3 id="set">Semester</h3>
+				<input type="checkbox" placeholder="First" class="g" name="gender" id="radio">
+				<h4 name="gender">1st </h4>
+				<input type="checkbox" placeholder="First" class="g" name="gender" id="radio" selected="selected">
+				<h4 name="gender">3rd</h4>
+				<input type="checkbox" placeholder="First" class="g" name="gender" id="radio" selected="selected" >
+				<h4 name="gender">5th</h4>
+				<input type="checkbox" placeholder="First" class="g" name="gender" id="radio" selected="selected">
+				<h4 name="gender">7th</h4>
+			</div>
+				
+			<div class="left">
+				<h3 id="set">Branch</h3>
+				<select class="c" required="required">
+				  <option value="volvo">CSE</option>
+				  <option value="saab">EC</option>
+				  <option value="mercedes">EE</option>
+				  <option value="audi">IC</option>
+				</select>
+				
+			</div>
+				
+			<div class="div" id="address">
+				<input type="submit" placeholder="Address" class="submit">
+			</div>
+				
+			</form>
+		
+		</div>
+		
+	</body>
+</html>
